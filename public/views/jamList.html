@@ -1,0 +1,19 @@
+<div>
+	<div class="textCenter">
+		<div>
+			<a href="#/"><img src="../images/DEV-Logo-PrimaryLogo-69k.jpg" /></a>
+		</div>
+	  	<h1>Welcome to Dev Code Jam!</h1>
+	  	<p>Inspired from Google's and Facebook's international code challenges, Dev Technology tech enthusiasts to practice, sharpen, or show-off their coding skills!  Work alone or in groups to solve coding challenges! </p>
+	</div>
+
+	<hr/>
+
+	<div class="textCenter">
+		<div ng-repeat="jam in jamList"><h2>{{jam.title}}</h2>
+			<ul>
+				<li ng-repeat="question in jam.questions"><a href="#/question/{{question.id}}">{{question.title}}</a></li>
+			</ul>
+      	</div>
+	</div>
+</div>

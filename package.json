@@ -1,0 +1,20 @@
+{
+  "name": "api",
+  "version": "0.0.0",
+  "description": "simple server rest api",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.12.3",
+    "express": "^4.12.3",
+    "prettyjson": "^1.1.0",
+    "stack-trace": "0.0.9",
+    "traceback": "^0.3.1",
+    "winston": "^1.0.0",
+    "async": "^1.5.2"
+  }
+}

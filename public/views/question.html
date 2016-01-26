@@ -1,0 +1,31 @@
+<div class="textCenter">
+	<div>
+		<a href="#/"><img src="../images/DEV-Logo-PrimaryLogo-69k.jpg" /></a>
+	</div>
+</div>
+<div ng-show="showSubmitPanel" class="panel panel-primary margin">
+	<div class="panel-heading">
+		Submit Your Output File
+	</div>
+	<div class="panel-body">
+		<form name="output">
+			<div class="form-group">
+			  	<label for="name">Name</label>
+			  	<input type="text" name="name" class="form-control" placeholder="Username" />
+			</div>
+			<div class="form-group">
+			  	<label for="file">File</label>
+			  	<input type="file" name="name" file-upload />
+			  	<ul>
+			  		<li ng-repeat="file in files">{{file.name}}</li>
+			  	</ul>
+			</div>
+		</form>
+	</div>
+	<div>
+		<button type="submit" class="btn btn-primary">Submit</button>
+		<button class="btn btn-warning" ng-click="showSubmitPanel = false">Close</button>
+	</div>
+</div>
+<div class="margin" ng-show="!showSubmitPanel"><a href="" ng-click="showSubmitPanel = !showSubmitPanel">Click to Submit</a></div>
+<div style="margin-left:30px;"><p ng-bind-html="questionHtml"> </p></div>
